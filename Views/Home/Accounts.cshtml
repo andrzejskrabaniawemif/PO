@@ -1,0 +1,18 @@
+﻿@model IEnumerable<DietCalc.Models.Account>
+@using DietCalc.Models
+@{
+    ViewBag.Title = "Account List";
+}
+
+<div class="row">
+    <div class="col-lg-1">
+        <table>
+            @foreach(Account account in Model) {
+            <tr>
+                <td>@account.AccountID</td>
+                <td>@account.Email</td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>
